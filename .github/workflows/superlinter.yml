@@ -1,7 +1,5 @@
 name: Super-Linter
-
 on: push
-
 jobs:
   super-lint:
     name: Lint code base
@@ -14,4 +12,4 @@ jobs:
         uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
